@@ -1,0 +1,219 @@
+[
+   {
+      "id":"ENT10",
+      "name":"Stage Annuity Contracts",
+      "phyName":"STG_ANNUITY_CONTRACTS",
+      "attrs":[
+         {
+            "btId":"BTO53",
+            "name":"Account Or Contract Number",
+            "phyName":"v_account_number",
+            "logicalDt":"Code_Alphanumeric_Long",
+            "physicalDt":"VARCHAR2(60)",
+            "relatedBts":[
+               {
+                  "groupId":"GR1",
+                  "btTypes":[
+                     {
+                        "relationType":"SHARED_DEFINITION",
+                        "btId":"BTO53",
+                        "relatedBtId":"BTO2726",
+                        "relatedAttrName":"Original Account Number",
+                        "relatedAttrPhyName":"v_original_account_number"
+                     },
+                     {
+                        "relationType":"SHARED_DEFINITION",
+                        "btId":"BTO53",
+                        "relatedBtId":"BTO2726",
+                        "relatedAttrName":"Original Account Number",
+                        "relatedAttrPhyName":"v_original_account_number"
+                     },
+                     {
+                        "relationType":"SHARED_DEFINITION",
+                        "btId":"BTO53",
+                        "relatedBtId":"BTO2726",
+                        "relatedAttrName":"Original Account Number",
+                        "relatedAttrPhyName":"v_original_account_number"
+                     },
+                     {
+                        "relationType":"SHARED_DEFINITION",
+                        "btId":"BTO53",
+                        "relatedBtId":"BTO2726",
+                        "relatedAttrName":"Original Account Number",
+                        "relatedAttrPhyName":"v_original_account_number"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "btId":"BTO374",
+            "name":"Benchmark Tenor",
+            "phyName":"n_benchmark_tenor",
+            "logicalDt":"Numeric_Long",
+            "physicalDt":"NUMBER(30)",
+            "relatedBts":[
+               {
+                  "groupId":"GR5",
+                  "btTypes":[
+                     {
+                        "relationType":"MULTIPLIER_UNIT",
+                        "btId":"BTO374",
+                        "relatedBtId":"BTO375",
+                        "relatedAttrName":"Benchmark Tenor Unit",
+                        "relatedAttrPhyName":"v_benchmark_tenor_unit"
+                     },
+                     {
+                        "relationType":"MULTIPLIER_UNIT",
+                        "btId":"BTO374",
+                        "relatedBtId":"BTO375",
+                        "relatedAttrName":"Benchmark Tenor Unit",
+                        "relatedAttrPhyName":"v_benchmark_tenor_unit"
+                     },
+                     {
+                        "relationType":"MULTIPLIER_UNIT",
+                        "btId":"BTO374",
+                        "relatedBtId":"BTO375",
+                        "relatedAttrName":"Benchmark Tenor Unit",
+                        "relatedAttrPhyName":"v_benchmark_tenor_unit"
+                     },
+                     {
+                        "relationType":"MULTIPLIER_UNIT",
+                        "btId":"BTO374",
+                        "relatedBtId":"BTO375",
+                        "relatedAttrName":"Benchmark Tenor Unit",
+                        "relatedAttrPhyName":"v_benchmark_tenor_unit"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "btId":"BTO2362",
+            "name":"Maturity Amount",
+            "phyName":"n_maturity_amount",
+            "logicalDt":"Amount",
+            "physicalDt":"NUMBER(22,3)",
+            "relatedBts":[
+               {
+                  "groupId":"GR4",
+                  "btTypes":[
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO2362",
+                        "relatedBtId":"BTO45",
+                        "relatedAttrName":"Maturity Date",
+                        "relatedAttrPhyName":"d_maturity_date"
+                     },
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO2362",
+                        "relatedBtId":"BTO45",
+                        "relatedAttrName":"Maturity Date",
+                        "relatedAttrPhyName":"d_maturity_date"
+                     },
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO2362",
+                        "relatedBtId":"BTO45",
+                        "relatedAttrName":"Maturity Date",
+                        "relatedAttrPhyName":"d_maturity_date"
+                     },
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO2362",
+                        "relatedBtId":"BTO45",
+                        "relatedAttrName":"Maturity Date",
+                        "relatedAttrPhyName":"d_maturity_date"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "btId":"BTO3003",
+            "name":"Account Status Code",
+            "phyName":"v_acct_status_code",
+            "logicalDt":"Code_Alphanumeric",
+            "physicalDt":"VARCHAR2(20)",
+            "relatedBts":[
+               {
+                  "groupId":"GR4",
+                  "btTypes":[
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO3003",
+                        "relatedBtId":"BTO70",
+                        "relatedAttrName":"Account Status Date",
+                        "relatedAttrPhyName":"d_acct_status_date"
+                     },
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO3003",
+                        "relatedBtId":"BTO70",
+                        "relatedAttrName":"Account Status Date",
+                        "relatedAttrPhyName":"d_acct_status_date"
+                     },
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO3003",
+                        "relatedBtId":"BTO70",
+                        "relatedAttrName":"Account Status Date",
+                        "relatedAttrPhyName":"d_acct_status_date"
+                     },
+                     {
+                        "relationType":"VALUE_AS_OF_DATE",
+                        "btId":"BTO3003",
+                        "relatedBtId":"BTO70",
+                        "relatedAttrName":"Account Status Date",
+                        "relatedAttrPhyName":"d_acct_status_date"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "btId":"BTO1243",
+            "name":"End Of Period Balance",
+            "phyName":"n_eop_bal",
+            "logicalDt":"Amount",
+            "physicalDt":"NUMBER(22,3)",
+            "relatedBts":[
+               {
+                  "groupId":"GR2",
+                  "btTypes":[
+                     {
+                        "relationType":"MEASURE_GL",
+                        "btId":"BTO1243",
+                        "relatedBtId":"BTO1552",
+                        "relatedAttrName":"General Ledger Account Code",
+                        "relatedAttrPhyName":"v_gl_code"
+                     },
+                     {
+                        "relationType":"MEASURE_GL",
+                        "btId":"BTO1243",
+                        "relatedBtId":"BTO1552",
+                        "relatedAttrName":"General Ledger Account Code",
+                        "relatedAttrPhyName":"v_gl_code"
+                     },
+                     {
+                        "relationType":"MEASURE_GL",
+                        "btId":"BTO1243",
+                        "relatedBtId":"BTO1552",
+                        "relatedAttrName":"General Ledger Account Code",
+                        "relatedAttrPhyName":"v_gl_code"
+                     },
+                     {
+                        "relationType":"MEASURE_GL",
+                        "btId":"BTO1243",
+                        "relatedBtId":"BTO1552",
+                        "relatedAttrName":"General Ledger Account Code",
+                        "relatedAttrPhyName":"v_gl_code"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
